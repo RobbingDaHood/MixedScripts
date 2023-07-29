@@ -2,7 +2,7 @@
 # Copy the old clipboard content to var
 OLDSELECT=$(xsel --clipboard --output)
 # Then use clipboard to store timestamp
-CURRENTDATE=$(date +"%Y-%m-%d")
+CURRENTDATE=$(date)
 # Print timestamp
 echo -n $CURRENTDATE | xsel --clipboard --input
 sleep 0.3
